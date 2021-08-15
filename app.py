@@ -6,8 +6,6 @@ import plotly.graph_objects as go
 
 year=2021
 
-pd.options.display.float_format = '{:,.2f}'.format
-
 agency_req = requests.get('https://api.usaspending.gov/api/v2/references/toptier_agencies')
 agency_json = agency_req.json()['results']
 df = pd.DataFrame.from_dict(agency_json)
@@ -56,4 +54,4 @@ app.layout = html.Div([
 ])
 
 if __name__ == '__main__':
-    app.run_server(debug=True, host='0.0.0.0', port=8000)
+    app.run_server(debug=False)
