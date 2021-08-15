@@ -1,1 +1,1 @@
-web: gunicorn app:server
+web: voila --port=$PORT --no-browser 'USA Spending.ipynb'
