@@ -7,7 +7,7 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
 $(document).ready(function() {
 	$.ajax({
 		type: "POST",
-		url: "https://maker.ifttt.com/trigger/heroku_app/with/key/c1rbTcV6gKEl94vAuT3vah",
+		url: "https://maker.ifttt.com/trigger/heroku_app/with/key/{KEY}",
 		data: {"value1":"USA Spending"}
 	});
 });
