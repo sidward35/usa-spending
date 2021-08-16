@@ -1,5 +1,5 @@
 # USA Spending
 
-Heroku app that visualizes the current US Budget as a treemap. Check it out at [usbudget.tk](https://www.usbudget.tk).
+Mobile-friendly treemap visualization of the current US Budget. Check it out at [m.usbudget.tk](https://m.usbudget.tk).
 
 ![](demo.gif)
