@@ -48,7 +48,6 @@ def update_graph_live(n):
         output = pd.DataFrame.from_dict(data)
         output.obligated_amount = output.obligated_amount.astype(float)
         output['budget'] = 'Budget'
-        print('fetched data')
 
     # create new figure
     fig = px.treemap(output, path=['budget', 'agency_name', 'account_title'], values='obligated_amount')
@@ -67,9 +66,8 @@ def update_graph_live(n):
     fig.update_layout(margin = dict(t=50, l=0, r=0, b=0))
     fig.update_layout(paper_bgcolor='#f8f8f8', plot_bgcolor='#f8f8f8')
 
-    print('treemap generated')
     return fig
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True, host='0.0.0.0', port=8000)
+    app.run_server(debug=False)
