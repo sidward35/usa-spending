@@ -5,5 +5,5 @@ var SplunkRum=function(){"use strict";function t(t,e,n){return e in t?Object.def
 SplunkRum.init({
       beaconUrl: 'https://rum-ingest.us1.signalfx.com/v1/rum',
       rumAuth: '{AUTH}',
-      app: 'usbudget'
+      app: 'us-budget'
     });
