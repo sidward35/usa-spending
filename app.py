@@ -36,6 +36,7 @@ from dash.dependencies import Input, Output
 app = dash.Dash(__name__, title='USA Spending', meta_tags=[{'name': 'description', 'content': 'Mobile-friendly treemap visualization of the current US Budget'},{'name': 'keywords', 'content': 'css, python, heroku, flask, plotly, pandas, python3, dash, treemap, heroku-app, plotly-dash, plotly-python, plotly-express, spending, spend-analysis, us-data'},{'name': 'author', 'content': 'Siddharth Mathur'},{'name': 'robots', 'content': 'index, follow'}])
 server = app.server
 app.layout = html.Div([
+    html.Script(src='assets/rum.js'),
     dcc.Graph(figure=fig, style={'height': '90vh'}, config= {'displaylogo': False, 'displayModeBar': False})
 ])
 
