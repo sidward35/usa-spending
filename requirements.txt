@@ -9,7 +9,7 @@ jupyter-server
 jupyterlab
 jupyterlab-pygments
 jupyterlab-server
-pandas==1.5.2
+pandas
 plotly
 requests
 voila
