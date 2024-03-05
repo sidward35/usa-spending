@@ -13,3 +13,5 @@ pandas
 plotly
 requests
 voila==0.2.3
+nbconvert>=7
+mistune>=2
